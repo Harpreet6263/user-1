@@ -1,0 +1,15 @@
+1. ‎Run This code in your Database sql -
+
+create database whatsapp;
+
+CREATE TABLE chat (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    msg VARCHAR(500),
+    time TEXT DEFAULT (CURRENT_TIME),
+    sender VARCHAR(20)
+);
+INSERT INTO chat (msg, sender) VALUES ('Hello', 'you');
+ 
+2. Run npm install for both user 1 and user 2 and also run npm install for both user's backend folder.
+
+3. Run step 2 again but now run npm start command instead of npm install.
